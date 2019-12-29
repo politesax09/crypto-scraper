@@ -16,8 +16,24 @@ echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt
 # Actualizar repostiorios
 apt-get update
 
+# FIXME: No instalar apache si no es necesario
 # Instalar PHP 7.4
 apt-get -y install php7.4
 
 # Comprobar instalacion
 php -v
+
+# Instalar extensiones necesarias
+# cURL
+apt-get -y install php7.4-curl
+# Simple HTML DOM
+mkdir -p /tmp/crypto-scraper/sHDOM
+cd /tmp/crypto-scraper
+wget -t 3 -P /tmp/crypto-scraper/sHDOM https://sourceforge.net/projects/simplehtmldom/files/latest/download
+mv /tmp/crypto-scraper/sHDOM/download /tmp/crypto-scraper/sHDOM/sHDOM.zip
+unzip -d /tmp/crypto-scraper/sHDOM /tmp/crypto-scraper/sHDOM/sHDOM.zip
+
+
+rm -r /tmp/crypto-scraper
+
+# TODO: Mensaje final de instalacion exitosa (colores)

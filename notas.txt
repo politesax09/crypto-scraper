@@ -1,2 +1,13 @@
 HERRAMIENTAS SCRAPING:
 	+ https://webhose.io
+
+PAGINA INFO:
+	+ https://es.tradingview.com/
+
+LIBRERIAS PHP PARA SCRAPING:
+	+ cURL
+	+ Guzzle 6
+	+ Requests
+
+#!/bin/php	o	#!/bin/php7.4 para poder ejecutar fichero con ./fich.php y sin
+apache

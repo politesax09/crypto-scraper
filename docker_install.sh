@@ -23,3 +23,5 @@ adduser USUARIO docker
 
 # Probar instalacion docker
 docker run hello-world
+
+# TODO: Mensaje final de instalacion exitosa (colores)
