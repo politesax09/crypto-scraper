@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Comprobar provilegios de superusuario
 if [ $USER != 'root' ] ; then
     echo "Debes ser \"root\" para ejecutar este script"
@@ -33,7 +34,7 @@ wget -t 3 -P /tmp/crypto-scraper/sHDOM https://sourceforge.net/projects/simpleht
 mv /tmp/crypto-scraper/sHDOM/download /tmp/crypto-scraper/sHDOM/sHDOM.zip
 unzip -d /tmp/crypto-scraper/sHDOM /tmp/crypto-scraper/sHDOM/sHDOM.zip
 
-
+# TODO: Posicionar bien el fichero de la libreria de sHDOM
 rm -r /tmp/crypto-scraper
 
 # TODO: Mensaje final de instalacion exitosa (colores)
